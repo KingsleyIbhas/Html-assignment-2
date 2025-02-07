@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>About Me</h1>
+        <p>Welcome! Here's a powerful message about myself using various media elements.</p>
+    </header>
+
+    <hr>
+    <section id="picture">
+        <h2>My Picture</h2>
+        <p>This is an image of me that adapts to your screen size:</p>
+        <picture>
+            <source srcset="assets/image01.jpg" media="(min-width: 1200px)"/>
+            <source srcset="assets/image02.jpg" media="(min-width: 900px)"/>
+            <source srcset="assets/image04.jpg" media="(min-width: 600px)"/>
+            <img src="assets/image03.jpg" alt="Picture of Me"/>
+       </picture>
+        <p>The image adjusts based on whether you're on a mobile, tablet, or laptop.</p>
+    </section>
+    
+<!-- Audio Section -->
+<section>
+    <h2>My Audio Message</h2>
+    <p>Listen to my message:</p>
+    <audio controls>
+        <source src="assets/Audio 01.png" type="audio/mpeg">
+        <source src="message.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
+</section>
+<!-- Video Section -->
+<section>
+    <h2>My Video</h2>
+    <p>Watch a short video about me:</p>
+    <video controls width="600">
+        <source src="assets/Vid.01.mp4" type="video/mp4">
+        <source src="about-me.webm" type="video/webm">
+    </video>
+</section>
+</body>
+</html>
